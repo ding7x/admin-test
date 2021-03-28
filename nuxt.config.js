@@ -10,7 +10,7 @@ export default {
       {hid: 'description', name: 'description', content: ''}
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      {rel: 'icon', type: 'image/svg+xml', href: '/logo-dark.svg'},
     ],
     script: [
       {src: '/js/font-awesome-pro.js', body: true, ssr: false},
