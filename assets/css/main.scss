@@ -1,0 +1,88 @@
+@import "responsive";
+@import "vuesax.config";
+@import "style";
+@import "quill.config";
+
+html {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root, * {
+  scrollbar-face-color: #EBEBEB; /* Firefox 63 compatibility */
+  scrollbar-track-color: white; /* Firefox 63 compatibility */
+  scrollbar-color: #EBEBEB white;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #EBEBEB 0 0 no-repeat padding-box;
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: white;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--bg);
+  //var
+  --bg: #f8f8f8;
+  --bg-widget: #fff;
+  --primary-color: #1e1e1e;
+  --text-color: #000;
+  --blue-primary: rgb(25, 91, 255);
+  --yellow-primary: rgb(254, 130, 0);
+  --red-primary: #ff3e4e;
+  //
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #EBEBEB 0 0 no-repeat padding-box;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: white;
+  }
+}
+
+#__layout-main {
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.sortable-chosen {
+  //background: rgba(25, 91, 255, .1);
+  transition: all .2s;
+}
+
+.sortable-ghost {
+  background: rgba(25, 91, 255, .1);
+  transition: all .2s;
+}
+
+#drop-items {}

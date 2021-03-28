@@ -1,0 +1,158 @@
+//page layout
+.p-layout {
+
+  .wrapper {
+    padding: 20px 0 0 0;
+  }
+
+  .wrapper_title {
+    font-weight: 600;
+    font-size: 18px;
+    border-left: 2px solid var(--primary-color);
+    padding-left: 10px;
+    margin: 0 0 20px 5px;
+  }
+
+  .wrapper_container {
+    background: var(--bg-widget);
+    border-radius: 5px;
+    padding: 20px;
+  }
+}
+
+//page layout
+
+
+//button
+.button {
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 0;
+  height: 35px;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    transition: all .2s;
+    opacity: 0.9;
+  }
+}
+
+//pagination
+.d7-pagination {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .7rem;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .page-number {
+    display: flex;
+    width: fit-content;
+    padding: 0 20px;
+
+    .number {
+      height: 25px;
+      width: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all .2s ease;
+      color: black;
+      font-weight: 500;
+      opacity: .6;
+
+      &:hover {
+        transition: all .2s ease;
+        opacity: 1;
+      }
+    }
+  }
+
+  .page-active {
+    transition: all .2s ease;
+    opacity: 1 !important;
+    background: rgba(26, 92, 255, 1) !important;
+    color: white !important;
+    box-shadow: 0px 8px 20px -6px rgba(var(--vs-color), 1);
+  }
+
+  .next, .prev {
+    cursor: pointer;
+    text-transform: uppercase;
+
+    svg {
+      height: 10px;
+      width: 10px;
+      fill: var(--textColor);
+      opacity: .7;
+
+      &:hover {
+        transition: all .2s ease-in-out;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+//pagination
+
+//input
+.d7-input-content {
+
+  input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px 12px;
+    border: none;
+    background: #fafafa;
+    color: var(--text-color);
+    font-size: 1rem;
+
+    &::placeholder {
+      color: var(--text-color);
+      opacity: .7;
+      font-size: .85em;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+//input
+.d7-textarea-content {
+
+  textarea {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    background: #fafafa;
+    resize: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+    &::placeholder {
+      font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      font-size: 1rem;
+      color: var(--text-color);
+      opacity: .7;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+}

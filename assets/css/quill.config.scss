@@ -1,0 +1,22 @@
+.editor-widget {
+  border-radius: 5px;
+
+  .ql-toolbar {
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 5px;
+    background: #F7F7F7;
+    border: 1px solid var(--border-color) !important;
+  }
+
+  .ql-container {
+    border: 1px solid var(--border-color) !important;
+    border-top: none;
+    min-height: 570px;
+    background: #fafafa;
+    border-radius: 0 0 5px 5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+//table
+.vs-table__footer {
+  border-radius: 0 0 5px 5px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vs-table__thead .vs-table__th {
+
+  &:last-child {
+    border-radius: 0 5px 0 0;
+  }
+
+  &:first-child {
+    border-radius: 5px 0 0 0;
+  }
+
+}
+
+.vs-input {
+  border-radius: 5px;
+}
+
+//select
+.vs-select-content {
+  width: 100%;
+  max-width: none;
+
+
+  input {
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    background: #fafafa;
+    color: var(--text-color);
+  }
+
+  .vs-select__label {
+    color: var(--text-color);
+    font-size: 1rem;
+    opacity: .7;
+  }
+}
+
+.vs-select__option {
+  border-radius: 5px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  transition: all .2s;
+
+  &:hover {
+    transition: all .2s;
+    background: rgba(0, 0, 0, .08);
+  }
+}
+
+.accept-checkbox {
+
+  .vs-checkbox-con {
+    height: 16px;
+    width: 16px;
+  }
+
+  .vs-checkbox-label {
+    font-size: .7rem !important;
+  }
+}
+
+
+.vs-dialog {
+  border-radius: 5px;
+  padding: 20px;
+}
