@@ -365,7 +365,7 @@ export default {
           name: 'Chelsey Dietrich',
           username: 'kamrenane',
           email: 'Lucio_Hettinger@annie.ca',
-          birthday: '1999-23-07',
+          birthday: '1999-09-23',
           avatar: '/images/male.jpg',
           gender: 'male',
           address: "New York"
@@ -395,7 +395,7 @@ export default {
           name: 'Nicholas Runolfsdottir V',
           username: 'taximetienow',
           email: 'Sherwood@rosamond.me',
-          birthday: '1994-18-08',
+          birthday: '1994-10-08',
           avatar: '/images/female.jpg',
           gender: 'female',
           address: "Ha Noi"
@@ -405,7 +405,7 @@ export default {
           name: 'Glenna Reichert',
           username: 'tuelphine',
           email: 'Chaim_McDermott@dana.io',
-          birthday: '1994-16-1',
+          birthday: '1994-06-1',
           avatar: '/images/female.jpg',
           gender: 'female',
           address: "Tokyo"
