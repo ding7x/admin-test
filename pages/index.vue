@@ -83,6 +83,7 @@
                   floating
                   class="button action--item"
                   @click="createShow"
+                  style="width: 120px; white-space: nowrap"
                 >
                   Create Account
                 </vs-button>
@@ -91,6 +92,7 @@
                   class="button action--item"
                   danger
                   @click="deleteMany"
+                  style="width: 120px; white-space: nowrap"
                 >
                   Delete Account
                 </vs-button>
@@ -319,7 +321,7 @@ export default {
       },
       users: [
         {
-          id: 1,
+          id: '123abc',
           name: 'Leanne Graham',
           username: 'bretatey',
           email: 'Sincere@april.biz',
@@ -329,7 +331,7 @@ export default {
           address: "New York"
         },
         {
-          id: 2,
+          id: '2c4b5a',
           name: 'Ervin Howell',
           username: 'antonette',
           email: 'Shanna@melissa.tv',
@@ -339,7 +341,7 @@ export default {
           address: "Paris"
         },
         {
-          id: 3,
+          id: '112baa',
           name: 'Clementine Bauch',
           username: 'samantha',
           email: 'Nathan@yesenia.net',
@@ -349,7 +351,7 @@ export default {
           address: "Manchester City"
         },
         {
-          id: 4,
+          id: '12a4ab',
           name: 'Patricia Lebsack',
           username: 'karianne',
           email: 'Julianne.OConner@kory.org',
@@ -359,7 +361,7 @@ export default {
           address: "Manchester City"
         },
         {
-          id: 5,
+          id: '3bcd12',
           name: 'Chelsey Dietrich',
           username: 'kamrenane',
           email: 'Lucio_Hettinger@annie.ca',
@@ -369,7 +371,7 @@ export default {
           address: "New York"
         },
         {
-          id: 6,
+          id: '33bba1',
           name: 'Mrs. Dennis Schulist',
           username: 'leopoldocorkery',
           email: 'Karley_Dach@jasper.info',
@@ -379,7 +381,7 @@ export default {
           address: "New York"
         },
         {
-          id: 7,
+          id: '4caa22',
           name: 'Kurtis Weissnat',
           username: 'elwynskilesana',
           email: 'Telly.Hoeger@billy.biz',
@@ -389,7 +391,7 @@ export default {
           address: "Roma"
         },
         {
-          id: 8,
+          id: '332baa',
           name: 'Nicholas Runolfsdottir V',
           username: 'taximetienow',
           email: 'Sherwood@rosamond.me',
@@ -399,7 +401,7 @@ export default {
           address: "Ha Noi"
         },
         {
-          id: 9,
+          id: 'aaa123',
           name: 'Glenna Reichert',
           username: 'tuelphine',
           email: 'Chaim_McDermott@dana.io',
@@ -470,6 +472,7 @@ export default {
         this.error('.message-email', 'Email invalidate.')
       }
       if (!error) {
+        this.user.id = this.id()
         this.user.gender === 'male' ? this.user.avatar = '/images/male.jpg' : this.user.avatar = '/images/female.jpg'
         if (this.updateMode) {
           this.updateInfo(this.user)
@@ -556,6 +559,12 @@ export default {
         title: title,
         text: text
       })
+    },
+    id() {
+      return 'xxxyyy'.replace(/[xy]/g, function (c) {
+        var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+      });
     }
   },
   watch: {

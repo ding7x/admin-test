@@ -98,7 +98,7 @@ export default {
     return {
       active: 'home',
       searchString: '',
-      lgWidth: false,
+      lgWidth: true,
       darkMode: false,
       popoverShow: false,
     }
